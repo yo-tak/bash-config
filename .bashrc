@@ -12,13 +12,13 @@ alias gc='git commit -m'
 alias cp='cp -iv'
 alias mv='mv -iv'
 
+alias ls='ls -FG'
+alias ll='ls -al'
+
 cd() { builtin cd "$@"; ll; }
 alias ..='cd ../'
 alias 2.='cd ../../'
 alias 3.='cd ../../../'
-
-alias ls='ls -FG'
-alias ll='ls -al'
 
 # bashrc, bash_profile
 alias vbr='vim ~/.bashrc'
