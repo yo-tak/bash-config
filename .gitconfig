@@ -1,0 +1,4 @@
+[credential]
+	helper = osxkeychain
+[alias]
+	del-br = !git branch --merged | grep -vE '^\\*|master$|develop$' | xargs -I % git branch -d %
